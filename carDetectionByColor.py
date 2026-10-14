@@ -231,7 +231,7 @@ class YOLOSpotlight:
                         x1, y1 = max(0, x1), max(0, y1)
                         x2, y2 = min(w, x2), min(h, y2)
 
-                        # Kutuyu merkeze yakin bir bolgeye daraltarak teker/g�lge/asfalt
+                        # Kutuyu merkeze yakin bir bolgeye daraltarak teker/gölge/asfalt
                         # gibi araca ait olmayan pikselleri renk kontrolunden disliyoruz
                         bw, bh = x2 - x1, y2 - y1
                         pad_x = int(bw * (1 - self.body_crop_ratio) / 2)
